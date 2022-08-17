@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/*
+基本設定bodyとaタグを全体的に指定しておく
+*/
+body {
+    font-family: 'Avenir' , sans-serif;
+    color: #303030;
+    margin: 0;
+}
+
+a {
+    color: #303030;
+    text-decoration: none;
+}
+/*
+スマホとPCで表示させたいときに分ける場合はclassにsp,pcを設定して使い分ける
+*/
+.sp {
+    display: none;
+}
+
+.pc {
+    display: block;
+}
+
+@media screen and (max-width:767px){
+    .sp {
+        display: block;
+    }
+    
+    .pc {
+        display: none;
+    }
+}
+
+header {
+    background: radial-gradient(#A7A9A6, #6D6F6C);
+    color: #FFFFFF;
+    display: inline-block;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    width: 50px;
+    text-align: center;
+    list-style: none;
+    background-color: #FFFFFF;
+    padding: 10px;
+}
+
+nav ul img {
+    width: 20px;
+    margin: auto;
+    display: block;
+}
+
+nav ul a {
+    font-size: small;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.firstview {
+    margin: 0px 100px;
+    margin-bottom: 150px;
+}
+
+.header-contents {
+    background-image: url(../img/profile.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right 30% bottom;
+    display: inline-block;
+    width: 100%;
+}
+
+#about {
+    background-image: url(../img/laptop-img.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 120% 0%;
+}
+
+.about-contents {
+    margin: 70px 40px;
+    width: 600px;
+}
