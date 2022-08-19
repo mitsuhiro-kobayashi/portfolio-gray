@@ -1,5 +1,7 @@
 # portfolioトレーニング作成（gray）
 
+実際に作成したポートフォリオのサンプルです。
+
 [webサイトを見る]（https://portfolio-training-gray.herokuapp.com/）
 
 
