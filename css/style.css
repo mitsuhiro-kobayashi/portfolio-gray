@@ -23,16 +23,6 @@ a {
     display: block;
 }
 
-@media screen and (max-width:767px){
-    .sp {
-        display: block;
-    }
-    
-    .pc {
-        display: none;
-    }
-}
-
 header {
     background: radial-gradient(#A7A9A6, #6D6F6C);
     color: #FFFFFF;
@@ -90,9 +80,156 @@ h1 {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 120% 0%;
+    width: 100%;
+    min-height: 500px;
 }
 
 .about-contents {
-    margin: 70px 40px;
-    width: 600px;
+    margin: 5%;
+    width: 50%;
+}
+
+.about-icons img{
+    width: 32px;
+    margin-right: 2%;
+}
+
+#projects {
+    background: radial-gradient(#A7A9A6, #6D6F6C);
+    background-size: 100% 58%;
+    color: #FFFFFF;
+    display: inline-block;
+}
+
+.bg-w {
+    background-color: #FFFFFF;
+}
+
+.tx-g {
+    color: #303030;
+}
+
+#projects h2 {
+    margin: 5%;
+}
+.project-card {
+    padding-left: 5%;
+    display: flex;
+}
+
+.project-card-img {
+    width: 50%;
+    display: flex;
+}
+
+.project-card img {
+    width: 100%;
+}
+
+.project-card-txt {
+    margin-left: 5%;
+}
+
+.project-links {
+    display: flex;
+}
+
+.project-link {
+    padding:5px 10px;
+    margin-right:20px;
+    border: 1px #FFFFFF solid;
+}
+
+.bg-g {
+    border: 1px #303030 solid;
+}
+.tx-b {
+    background-color: #303030;
+}
+
+.tx-b a {
+    color: #FFFFFF;
+}
+
+#contact {
+    background-color: #2F2F2F;
+    color:#FFFFFF;
+    padding: 5%;
+}
+
+#contact h2 {
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+#contact p {
+    margin: 0;
+    padding-left: 5%;
+}
+
+#contact img {
+    width: 20px;
+    margin-right: 5px;
+    vertical-align: bottom;
+}
+
+.tx-w {
+    background-color: #656363;
+    text-align: center;
+    margin: 0;
+    font-size: small;
+    color: #FFFFFF;
+    padding: 5px;
+}
+
+@media screen and (max-width:767px){
+    .sp {
+        display: block;
+    }
+    
+    .pc {
+        display: none;
+    }
+
+    body {
+        text-align: center;
+    }
+
+    nav ul li {
+        background-color: inherit;
+    }
+    nav ul li a {
+        color: #FFFFFF;
+    }
+    nav ul li img {
+        filter: invert(1);
+        mix-blend-mode: screen;
+    }
+    .firstview {
+        margin: 50px auto 400px;
+    }
+    #about {
+        background-image: none;
+        min-height: auto;
+    }
+    .about-contents {
+        width: 80%;
+        margin: 40px auto;
+    }
+    .project-card {
+        display: block;
+        padding:30px 0;
+    }
+    .project-card-img {
+        margin: auto;
+        width: 80%;
+    }
+    .project-card-txt {
+        margin: 0 auto;
+    }
+    .project-links {
+        justify-content: center;
+        margin-bottom: 70px;
+    }
+
 }
