@@ -1,4 +1,4 @@
-# portfolioトレーニング作成（gray）
+# portfolioサンプル（grayバージョン）
 
 実際に作成したポートフォリオのサンプルです。
 
